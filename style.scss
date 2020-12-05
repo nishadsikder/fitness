@@ -1,0 +1,204 @@
+body, html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+$clrr: #76323f;
+$clrrx: #f7adba;
+$clrb: #565656;
+$clrw: #BF9F7F; 
+
+hr{
+    width: 150px;       
+    border: 1px solid $clrr;
+}
+.txt-r{
+    color: #ffffff !important;
+}
+.txt-w{
+    color: $clrw;
+}
+.txt-b{
+    color: $clrb;
+}
+.txt-red{
+    color: $clrr;
+}
+.bg-lnr{
+    background: linear-gradient(to right, #8A119E , #DB832C);
+}
+.bg-clrr{
+    background: $clrr;
+}
+.bg-clrb{
+    background: $clrb;
+}
+.bg-clrw{
+    background: $clrw;
+}
+.fs1{
+    font-size: 60px;
+}
+.subheading{
+    font-size: 1.2rem;
+}
+.subheading2{
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.btn{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: CustomFont2;
+}
+h1{
+    font-family: CustomFont2;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url(webfonts/Pacifico-Regular.ttf) format("woff");
+}
+@font-face {
+    font-family: "CustomFont2";
+    src: url(webfonts/DoHyeon-Regular.ttf) format("woff");
+}
+
+// page css
+
+header{
+    .navbar-brand{
+        font-weight: bold;
+        font-family: CustomFont;
+    }
+}
+.banner{
+    background: url(images/web-1012467_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 38rem;
+    padding-top: 220px;
+    // padding-left: 10rem;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.result{
+    background: linear-gradient(rgba(0,0,0,0.4)) , url(images/bg_2.jpg);
+    width: 100%;
+    height: 643px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .text-body{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+}
+.classes{
+    .class-bar{
+        transition: 0.4s all ease;
+        
+    }
+    .class-bar:hover{
+        transform: scale(1.10);
+        // z-index: 2;
+        background: $clrw;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.count{
+    background: linear-gradient(rgba(0,0,0,0.4)) , url(images/bg_3.jpg);
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .text-body{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+}
+.schedule{
+    .card-bar{
+        background: #eeeeee;
+    }
+    .card-bar:hover{
+        background: $clrb;
+        color: #ffffff;
+    }
+    .card-bar-active{
+        background: $clrb;
+        color: #ffffff;
+    }
+
+    .m-card{
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        border: 1px solid black;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .m-card:hover{
+        background: $clrb;
+        transform: scale(1.20);
+        z-index: 2;
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+.our-team{
+    img{
+        width: 40%;
+    }
+}
+.contact{
+    .form-control{
+        height: 50px;
+        padding: 100px 5;
+        border-width: 3px;
+        margin-bottom: 15px;
+    }
+    .ht{
+        height: 100% !important;
+    }
+    .form-control:focus{
+        border-color: #218838;
+    }
+}
+footer{
+    li{
+        padding: 5px 0;
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: $clrw;
+        }
+        :hover{
+            text-decoration: none;
+            color: $clrr;
+        }
+    }
+    .form-control{
+        width: 300px !important;
+        padding: 100px 5;
+        border-width: 3px;
+        // margin-bottom: 15px;
+    }
+}
